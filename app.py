@@ -23,7 +23,7 @@ nltk.download('averaged_perceptron_tagger')
 
 
 small_model = compress_fasttext.models.CompressedFastTextKeyedVectors.load("cc.en.300.compressed.bin")
-model=pickle.load(open('C:/Users/mansi/Desktop/Study/Hate Speech Detection/models/voting.pkl','rb'))
+model=pickle.load(open('voting.pkl','rb'))
 
 
 # ======================================================================================================================
