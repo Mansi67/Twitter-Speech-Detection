@@ -16,14 +16,12 @@ import demoji
 import pickle
 import streamlit as st
 import compress_fasttext
-nltk.download('punkt')
-nltk.download('wordnet')
-nltk.download('stopwords')
-nltk.download('averaged_perceptron_tagger')
+nltk.download('all')
+
 
 
 small_model = compress_fasttext.models.CompressedFastTextKeyedVectors.load("cc.en.300.compressed.bin")
-model=pickle.load(open('C:/Users/mansi/Desktop/Study/Hate Speech Detection/models/voting.pkl','rb'))
+model=pickle.load(open('voting.pkl','rb'))
 
 
 # ======================================================================================================================
